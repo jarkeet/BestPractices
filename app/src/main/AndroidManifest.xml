@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BestPractices">
         <activity android:name=".MainActivity">
+
+        </activity>
+
+
+        <activity android:name=".test.TestDialogActivity">
+
+        </activity>
+
+
+        <activity android:name=".test.TestCanvasActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

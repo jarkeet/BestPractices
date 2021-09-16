@@ -3,8 +3,8 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "29.0.3"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "com.jarkeet.bestpractices"
@@ -37,6 +37,21 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+
+
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+    implementation 'com.blankj:utilcodex:1.30.6'
+
+    implementation 'com.github.li-xiaojun:XPopup:2.4.8'
+
+    implementation 'cn.yc:YCDialogLib:3.6.6'
+
+    implementation 'com.github.liys666666:LDialog:V2.1.1'  //添加
 
 
 }
