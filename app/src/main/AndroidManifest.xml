@@ -11,21 +11,20 @@
         android:theme="@style/Theme.BestPractices">
         <activity android:name=".MainActivity">
 
-        </activity>
-
-
-        <activity android:name=".test.TestDialogActivity">
-
-        </activity>
-
-
-        <activity android:name=".test.TestCanvasActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity android:name=".test.canvas.CanvasActivity"/>
+
+        <activity android:name=".test.icon.IconicsActivity"/>
+
+        <activity android:name=".test.recyclerview.ScrollRecyclerViewActivity"/>
+
     </application>
 
 </manifest>

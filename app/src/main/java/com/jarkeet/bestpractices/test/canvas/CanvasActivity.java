@@ -1,4 +1,4 @@
-package com.jarkeet.bestpractices.test;
+package com.jarkeet.bestpractices.test.canvas;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import com.jarkeet.bestpractices.R;
 
 import androidx.annotation.Nullable;
 
-public class TestCanvasActivity extends Activity {
+public class CanvasActivity extends Activity {
 
 
     @Override

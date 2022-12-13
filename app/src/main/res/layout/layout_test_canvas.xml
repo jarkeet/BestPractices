@@ -5,7 +5,7 @@
 
 
 
-    <com.jarkeet.bestpractices.test.CanvasView
+    <com.jarkeet.bestpractices.test.canvas.CanvasView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />

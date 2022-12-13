@@ -1,19 +1,20 @@
 plugins {
     id 'com.android.application'
+    id 'kotlin-android'
 }
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "com.jarkeet.bestpractices"
-        minSdkVersion 21
-        targetSdkVersion 30
+        minSdkVersion 23
+        compileSdkVersion 29
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -26,7 +27,22 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    viewBinding {
+        enabled = true
+    }
+
 }
+
+//configurations.all {
+//    resolutionStrategy {
+//        force 'androidx.appcompat:appcompat:1.3.0'
+//        force 'androidx.appcompat:appcompat-resources:1.3.0'
+//        force 'androidx.core:core-ktx:1.5.0'
+//        force 'androidx.startup:startup-runtime:1.0.0'
+//
+//    }
+//}
 
 dependencies {
 
@@ -38,20 +54,19 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 
-
-    implementation 'com.android.support:support-v4:28.0.0'
-    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     implementation 'com.jakewharton:butterknife:10.2.3'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
 
     implementation 'com.blankj:utilcodex:1.30.6'
 
-    implementation 'com.github.li-xiaojun:XPopup:2.4.8'
 
-    implementation 'cn.yc:YCDialogLib:3.6.6'
+    implementation "com.mikepenz:iconics-core:5.3.0"
+    implementation "com.mikepenz:iconics-views:5.3.0"
+    implementation 'com.mikepenz:google-material-typeface:4.0.0.2-kotlin@aar'
 
-    implementation 'com.github.liys666666:LDialog:V2.1.1'  //添加
-
+    implementation "io.github.cymchad:BaseRecyclerViewAdapterHelper:3.0.11"
 
 }

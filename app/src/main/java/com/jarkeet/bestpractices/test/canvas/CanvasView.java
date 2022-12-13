@@ -1,4 +1,4 @@
-package com.jarkeet.bestpractices.test;
+package com.jarkeet.bestpractices.test.canvas;
 
 import android.content.Context;
 import android.graphics.Canvas;
