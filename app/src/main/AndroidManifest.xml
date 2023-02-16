@@ -24,6 +24,7 @@
         <activity android:name=".test.icon.IconicsActivity"/>
 
         <activity android:name=".test.recyclerview.ScrollRecyclerViewActivity"/>
+        <activity android:name=".test.snaphelper.SnapHelperTestActivity"/>
 
     </application>
 

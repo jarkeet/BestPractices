@@ -13,6 +13,7 @@ import com.jarkeet.bestpractices.test.KotlinTest
 import com.jarkeet.bestpractices.test.canvas.CanvasActivity
 import com.jarkeet.bestpractices.test.icon.IconicsActivity
 import com.jarkeet.bestpractices.test.recyclerview.ScrollRecyclerViewActivity
+import com.jarkeet.bestpractices.test.snaphelper.SnapHelperTestActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         items.add(Adapter.ItemBean("Canvas", CanvasActivity::class.java))
         items.add(Adapter.ItemBean("KotlinTest", KotlinTest::class.java))
         items.add(Adapter.ItemBean("ScrollRecyclerView", ScrollRecyclerViewActivity::class.java))
+        items.add(Adapter.ItemBean("SnapHelper", SnapHelperTestActivity::class.java))
 
         var adapter = Adapter( R.layout.layout_item_simple_text, items)
         binding.rv.adapter = adapter
